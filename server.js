@@ -17,4 +17,6 @@ const doctor = require('./routes/doctor_router')
 app.use("/doctor",doctor)
 app.use("/patient",patient)
 
-app.listen()
+app.listen(PORT,()=>{
+    console.log(`connected to server running on port:${PORT}`)
+})
